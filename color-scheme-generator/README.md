@@ -27,3 +27,6 @@ Built with
 - Asynchronous JavaScript
 - Semantic HTML5 markup
 - Flexbox
+
+## Author
+- Github : (https://github.com/Ashrita-Das)
