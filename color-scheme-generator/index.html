@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="selection-bar">
+            <form id="form">
+                <input type="color" name="seed-color" id="seed-color">
+                <select name="schemes" id="schemes">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="select-btn">Get color scheme</button>
+            </form>
+        </section>
+
+        <section class="colors" id="colors">
+            <div class="color one" id="color-one">
+                <div class="hex">#000000</div>
+            </div>
+            <div class="color two" id="color-two">
+                <div class="hex">#1A1919</div>
+            </div>
+            <div class="color three" id="color-three">
+                <div class="hex">#343232</div>
+            </div>
+            <div class="color four" id="color-four">
+                <div class="hex">#4F4A4A</div>
+            </div>
+            <div class="color five" id="color-five">
+                <div class="hex">#6A6262</div>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+<script src="index.js"></script>
+</html>
