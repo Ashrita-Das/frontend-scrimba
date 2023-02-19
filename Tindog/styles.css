@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #F8F8F8;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header , main {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 550px){
+    header, main {
+        max-width: 400px;
+    }
+}
+
+h3, p {
+    margin: 0;
+}
+
+.dog {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    /* background: url("images/dog-teddy.jpg"); */
+    background-size: cover;
+    border-radius: 1rem;
+
+}
+
+/* LAYOUT */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem
+}
+
+.nav-item {
+    width: 40px;
+    height: 20px;
+}
+
+.logo {
+    width: 82px;
+}
+
+.dog-card {
+    align-self: flex-end;
+}
+
+.dog-details {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+    color: #F8F8F8;
+    position: absolute;
+    bottom: 35%;
+    margin-left: 10px;
+    
+}
+
+.dog-bio {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #B7B7B7;
+    position: absolute;
+    bottom: 30%;
+    margin-left: 10px;
+}
+
+#dog-badge {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    rotate: -30deg;
+    width: 10%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    margin: 1em;
+}
+
+.cross-container {
+    margin-right: 5em;
+}
+
+.cross-container:hover,
+.cross-container:focus {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+.heart-container:hover,
+.heart-container:focus {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.hidden {
+    display: none;
+}
