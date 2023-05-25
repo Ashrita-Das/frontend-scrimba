@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Jimmy's Diner</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h3>The best burgers and pizzas in town</h3>
+        </header>
+        <div class="categories">
+            <div class="sort">
+                <label for="categories"></label>
+                <select name="categories" id="categories">
+                    <option value="all">All Categories</option>
+                    <option value="main">Main</option>
+                    <option value="desert">Deserts</option>
+                    <option value="beverage">Beverages</option>
+                </select>
+                <label for="sort-by"></label>
+                <select name="sort-by" id="sort-by">
+                    <option value="sort-by">Sort by</option>
+                    <option value="descending">Price-decreasing</option>
+                    <option value="increasing">Price-increasing</option>
+                </select>
+            </div>
+        </div>
+        <main>
+            <div id="menu-list"></div>
+            <div class="payment-message hidden" id="payment-message">
+                <p></p>
+            </div>
+        </main>
+        <div class="order hidden" id="order">
+            <h2>Your order</h2>
+            <div class="order-list" id="order-list">
+            </div>
+            <hr>
+            <div class="total" id="total">
+                <h2>Total Price</h2>
+                <h3 id="total-price">$0</h3>
+            </div>
+            <button class="complete-order" id="complete-order-btn">Complete order</button>
+        </div>
+        <div class="purchase-modal hidden" id="purchase-modal">
+            <form id="payment-form">
+                <h2>Enter Card Details</h2>
+                <label for="user-name"></label>
+                <input type="text" placeholder="Enter your name" name="user-name" id="user-name" required>
+                <label for="card-number"></label>
+                <input type="text" placeholder="Enter card number" name="card-number" id="card-number" required>
+                <label for="card-cvv"></label>
+                <input type="text" maxlength="3" placeholder="Enter CVV" name="card-cvv" id="card-cvv" required>
+                <button class="payment-btn" id="payment-btn" type="submit">Pay</button>
+                <button class="cancel-btn" id="cancel-btn" type="button">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="/index.js" type="module"></script>
+</body>
+</html>

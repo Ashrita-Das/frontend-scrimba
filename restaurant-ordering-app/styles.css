@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2b1f1d;
+    background-repeat: no-repeat;
+    font-family: 'Smythe', cursive;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    background-color: #F5F5F5;
+    margin: auto auto;
+    max-width: 37.5rem;
+    width: 100%;
+    height: fit-content;
+}
+
+header {
+    background-image: url(/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 10.5rem;
+    color: white;
+}
+
+header h1{
+    margin: 0;
+    padding: 4rem 0 0 3rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 0.1rem;
+}
+
+header h3{
+    margin-top: 2rem;
+    padding: 0 3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.sort {
+    display: flex;
+}
+#categories, #sort-by {
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    font-family: 'Smythe', cursive;
+    font-size: 2rem;
+    background-color: rgb(221, 217, 217);
+    cursor: pointer;
+    border: none;
+}
+
+option {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+main {
+    height: fit-content;
+    padding-bottom: 2rem;
+}
+
+#menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 5rem;
+    max-height: 30rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.payment-message {
+    background: #ECFDF5;
+    border-radius: 3px;
+    width:80%;
+    height: 5rem;
+    color:#065F46;
+    margin: 2rem auto;
+    font-weight: 400;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+}
+
+.card {
+    display:  grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 9rem;
+    border-bottom: 1px solid rgb(190, 189, 189);
+
+}
+
+.dish-name{
+    font-size: 2rem;
+    margin: 0.5rem .5rem ;
+}
+
+.dish-ingredients {
+    margin: 0.5rem .5rem;
+}
+
+.dish-price {
+    font-size: 1.5rem;
+    margin: 1.5rem .5rem;
+}
+
+
+.add-btn {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 1px solid rgb(163, 163, 163);
+    justify-self: right;
+    cursor: pointer;
+}
+.add-btn:hover {
+    transform: scale(-0.75);
+    animation: transform ease-in-out;
+}
+
+
+.order {
+    text-align: center;
+    width: 90%;
+    max-width: 32rem;
+    margin: auto;
+}
+
+.dish, .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-emoji {
+    font-size: 3rem;
+}
+
+.dish h2 {
+    font-size: 1.75rem;
+}
+
+.dish-name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dish-name h3{
+    color: #000000;
+    font-size: 1.75rem;
+}
+
+.dish-name p{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.dish-name p {
+    margin-left: .5rem;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.complete-order, .payment-btn, .cancel-btn {
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    width: 100%;
+    height: 3.75rem;
+    cursor: pointer;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px; 
+    margin-bottom: 5rem;
+}
+
+.purchase-modal {
+    position: fixed;
+    width: 25rem;
+    height: 30rem;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    filter: box-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+.purchase-modal h2{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.purchase-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-modal input {
+    margin: .5rem auto;
+    width: 20rem;
+    height: 3.5rem;
+    border: 1.3px solid #757575;
+    border-radius: 3.88991px;
+}
+
+.payment-btn, .cancel-btn {
+    
+    
+    border-radius: 3px;
+    width: 20rem;
+    margin: 1rem auto 0 auto;
+    height: 3.75rem;
+}
+
+.cancel-btn {
+    background-color: gray;
+}
+
